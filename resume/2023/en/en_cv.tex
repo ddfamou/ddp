@@ -1,0 +1,95 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{0pt} % allow room for 2-line header
+\setlength{\headsep}{0pt}  % space between header and text
+\setlength{\headheight}{0pt} % allow room for 2-line header
+\usepackage[a4paper,vmargin={10mm,0mm},hmargin={15mm,15mm}]{geometry}
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it M. SHAN}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document}
+\thispagestyle{empty} % this page has no header
+\name{\Large Mengfan (Fox) \underline{SHAN}\\[12pt]}% the \\[12pt] adds a blank line after name
+
+\address{{\bf Address:} 466 Tianbao Road, Shanghai, 200086 \hspace{0.25in}  {\bf Tel:} 18017661124 \hspace{0.25in}  {\bf   Email:} dd.famous@gmail.com}
+
+\begin{resume}
+\section{{WORKING EXPERIENCE}}
+\vspace{-10pt}
+\hrulefill\\
+
+\vspace{-15pt}
+{\bf Block}, Shanghai \hfill Since May, 2021 \\
+Joining Afterpay Shanghai in 2021, I transitioned to Block in 2022 as an SDE in the Growth Ads Team. Job responsibilities included providing data solutions from scratch to achieve growth for the advertising and user growth team. This involved building and maintaining the infrastructure for the data platform, designing and implementing data-driven online applications, as well as conducting research on cutting-edge data technologies, introducing new technologies, and handling complex issues.
+
+\vspace{-5pt}
+{\bf Shuhe Group}, Shanghai \hfill April, 2019 ~ April, 2021 \\
+Working with the Platform Team at Shanghai's Shuhe Group, I was responsible for BigData middleware like Hadoop, Hive, HBase, and Spark. My role included designing, deploying, and optimizing all BigData services, collaborating with both the Data Warehouse and Data Application Teams to ensure high availability.
+
+\vspace{-5pt}
+{\bf Works Applications}, Shanghai \hfill August, 2016 ~ April, 2019\\
+As Team Leader of EDP2 (Base Technologies Div) at Works Applications, I oversaw the development of a platform for enterprise applications on the cloud. This included managing a server for job assignments and a Hadoop/Spark cluster for job execution. 
+
+\section{{PROJECTS}}
+\vspace{-10pt}
+\hrulefill\\
+
+\vspace{-15pt}
+{\bf Ads Platform} \\
+A platform for managing and serving both affiliate and direct ads, it includes a data pipeline enabling advanced user targeting. Various ad formats are supported with ML modeling for ad ranking, and an ads manager for external advertisers.
+
+\vspace{-5pt}
+{\bf Eligibility Service} \\
+A tailored data platform for marketers enhancing targeting, segmentation and responsiveness. Advanced analytics, machine learning, and built-in testing improve marketing efficiency, scalability, and accuracy.
+
+\vspace{-5pt}
+{\bf CustomerIQ} \\
+A versatile system for projecting customer attributes across multiple scenarios optimised for audience targeting and ad personalisation. Its design promotes independent addition of attributes/traits enhancing marketing effectiveness.
+
+\vspace{-5pt}
+{\bf Data Service} \\
+A universal service for online and async data requests. The service utilizes managed data to connect Clickhouse, DynamoDb, Kylin, Spark, etc., federating data from different sources. 
+
+\vspace{-5pt}
+{\bf MarketplaceIQ \& AfterpayIQ} \\
+MarketplaceIQ extends the groundwork of AfterpayIQ, a self-service reporting product used by over 5,000 merchants. This project steps towards building a closed-loop attribution system, unlocking the potential of our first-party data, and enables data-driven merchant decisions.
+
+\vspace{-5pt}
+{\bf Data Platform} \\
+As the DRI of the Martech Data Platform, I designed, deployed, and maintained all data components to ensure SLA. My responsibilities also included Infrastructure as Code (IaC) and CI/CD, establishing network integration across different cloud environments.
+
+\section{SKILLS}
+\vspace{-10pt}
+\hrulefill\\
+{\sl Languages:} Java, kotlin, python, Ansible, shell\\
+{\sl Middleware:} Clickhouse, Kylin, Hive, HBase, Hadoop, Spark, Flume, Flink, Zookeeper, Kafka, neo4j, Presto, HugeGraph\\
+{\sl Skills:} AWS, Aliyun
+
+
+\section{{EDUCATIONS}}
+\vspace{-10pt}
+\hrulefill\\
+{\bf Nanjing University}, Nanjing \hfill  09/2010 - 06/2016 \\
+{\sl Ph.D. in Computer Software and Theory}, Department of Computer Science and Technology\\
+{\bf University of Minnesota, Twin Cities}, MN \hfill 10/2014 - 10/2015 \\
+{\sl Visiting Scholar supervised by Prof. Tian He}, Department of Computer Science and Engineering\\
+{\bf Nanjing University}, Nanjing  \hfill 09/2006 - 06/2010 \\
+{\sl Bachelor}, Department of  Computer Science and Technology\\
+
+\vspace{-20pt}
+\section{{REPOSITORIES}}
+\vspace{-10pt}
+\hrulefill\\
+{\bf GitHub} \hfill https://github.com/ddfamou
+
+\end{resume}
+\end{document}
