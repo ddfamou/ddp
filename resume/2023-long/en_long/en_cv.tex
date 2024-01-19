@@ -1,0 +1,132 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{0pt} % allow room for 2-line header
+\setlength{\headsep}{0pt}  % space between header and text
+\setlength{\headheight}{0pt} % allow room for 2-line header
+\usepackage[a4paper,vmargin={10mm,0mm},hmargin={15mm,15mm}]{geometry}
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it M. SHAN}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
+
+\begin{document}
+\thispagestyle{empty} % this page has no header
+\name{\Large Mengfan (Fox) \underline{SHAN}\\[12pt]}% the \\[12pt] adds a blank line after name
+
+\address{{\bf Address:} 466 Tianbao Road, Shanghai, 200086 \hspace{0.25in}  {\bf Tel:} 18017661124 \hspace{0.25in}  {\bf   Email:} dd.famous@gmail.com}
+
+\begin{resume}
+\section{{WORKING EXPERIENCE}}\label{sec:working-experience}
+\vspace{-10pt}
+\hrulefill\\
+
+\vspace{-20pt}
+{\bf Block}, Shanghai \hfill Since May, 2021 \\
+I joined Ads \& Growth Team, Afterpay in 2021 and transitioned to Cash, Block in 2022.
+My responsibilities were designing and implementing Martech Data Platform,
+including data infrastructures \& integrations, data pipelines \& data-driven services.
+During my time at work, I took the initiative to consolidate internal/external data and construct the Martech Data Platform.
+This platform encompassed various essential components, including data integration, data processing, and the provision of diverse data services, catering to the specific requirements of downstream operations.
+These services included data insights, a user data platform, and user engagement tools, ensuring seamless access and utilization of valuable information for our team's success.
+
+\vspace{-15pt}
+{\bf Shuhe Group}, Shanghai \hfill April, 2019 ~ April, 2021 \\
+Leading the Data Platform Team at Shanghai's Shuhe Group.
+My role included designing, developing and optimizing BigData Platform,
+collaborating with both the Data Warehouse and Data Application Teams to ensure high availability.
+The architecture of the data platform has undergone a transformative journey,
+starting from an on-premise setup and gradually transitioning to cloud-based infrastructure.
+This evolution involved the migration of data to the cloud, leading to the ultimate achievement of
+a robust and comprehensive data middle platform.
+
+\vspace{-15pt}
+{\bf Works Applications}, Shanghai \hfill August, 2016 ~ April, 2019\\
+As Team Leader of EDP2 (Base Technologies Div) at Works Applications.
+I oversaw the development of a platform for enterprise applications on the cloud.
+This included managing a server for job assignments and a Hadoop/Spark cluster for job execution.
+
+\vspace{-12pt}
+\section{{PROJECTS}}\label{sec:projects}
+\vspace{-10pt}
+\hrulefill\\
+{\bf Eligibility Service, Block} \\
+I designed and implemented Eligibility Service, a new, dynamic audience targeting service
+to significantly scale Boost to all types of incentive, 
+to highly reduce operational overhead for Boost set-up
+and to improve reporting processes of Boost.
+Kotlin, Armeria, DynamoDB, antlr4, Snowflake
+
+Design Doc & Review
+Project Management
+Implementation
+Maintain and monitor
+
+\vspace{-10pt}
+{\bf CustomerIQ, Block} \\
+I designed and implemented the service and related data pipeline jobs of CustomerIQ, a generic Customer Data Platform.
+CustomerIQ integrated data from various Clouds/Platforms and projecting  customer attributes across multiple scenarios optimised for boost targeting and ad personalisation.
+Its design promoted independent addition of attributes/traits enhancing marketing effectiveness.
+Kotlin, DynamoDB, Snowflake, Airflow
+
+\vspace{-10pt}
+{\bf Insight Service, Block}\\
+Design and implement data infrastructures, pipelines, data quality check system and the data service for MarketplaceIQ \& AfterpayIQ,
+a self-serving insight product for over 6000 merchants.
+Our integrated insight service leverages data from various dimensions and utilizes AI to analyze reports for 6000 merchants.
+This project steps towards building a closed-loop attribution system, unlocking the potential of our first-party data, and enables data-driven merchant decisions.
+Clickhouse, Kylin, Spark, Hive, DynamoDB, OpenAI
+
+\vspace{-10pt}
+{\bf Data Mid-Platform, Shuhe} \\
+Design the architecture and the migration plan of Data on Cloud.
+The BigData infra was migrated from On-Promise to AWS EMR, from AWS to AliCloud and finally Data Mid-Platform.
+To minimize migration impact and downtime to business,
+I needed to be compatible with changes, to fix bugs on opensource components (HDFS-9406, HIVE-19994, etc)
+and to provide all kinds of automation tools for migration and further management.
+Cloudera, AWS EMR, S3, Ali EMR, OSS, Dataphin
+
+
+\vspace{-10pt}
+{\bf FeatureHub, Shuhe} \\
+FeatureHub is a platform managing and providing features, for training models and online-prediction. 
+Unlike traditional feature platforms, which focus on data processing, 
+FeatureHub provides processed data for both online and offline services with the unified calibre. 
+It provides real time features for online services with low latency, as well as historical data for training.
+HBase, Flink, Hive
+
+
+\vspace{-12pt}
+\section{SKILLS}\label{sec:skills}
+\vspace{-10pt}
+\hrulefill\\
+{\sl Languages:} Java, kotlin, python, Ansible, shell\\
+{\sl Middleware:} Clickhouse, Kylin, Hive, HBase, Hadoop, Spark, Flume, Flink, Zookeeper, Kafka, neo4j, HugeGraph\\
+{\sl Skills:} AWS, Aliyun, Snowflake
+
+
+\vspace{-12pt}
+\section{{EDUCATIONS}}\label{sec:educations}
+\vspace{-10pt}
+\hrulefill\\
+{\bf Nanjing University}, Nanjing \hfill  09/2010 - 06/2016 \\
+{\sl Ph.D. in Computer Software and Theory}, Department of Computer Science and Technology\\
+{\bf University of Minnesota, Twin Cities}, MN \hfill 10/2014 - 10/2015 \\
+{\sl Visiting Scholar supervised by Prof. Tian He}, Department of Computer Science and Engineering\\
+{\bf Nanjing University}, Nanjing  \hfill 09/2006 - 06/2010 \\
+{\sl Bachelor}, Department of  Computer Science and Technology\\
+
+\vspace{-20pt}
+\section{{REPOSITORIES}}\label{sec:repositories}
+\vspace{-10pt}
+\hrulefill\\
+{\bf GitHub} \hfill https://github.com/ddfamou
+
+\end{resume}
+\end{document}
